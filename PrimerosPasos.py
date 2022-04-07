@@ -1,6 +1,6 @@
 # Mis primeros pasos en Python.
 
-# Dia 1 = 4/4/2022
+# Dia 1 | 04/4/2022
 
 '''
 
@@ -128,12 +128,92 @@ uu = 98 % 9
 print(uu)
 
 
+# DIA 2 | 07/04/2022
 
 '''
 
-Operadores Logicos
+Operadores Logicos y Relacionales
 
-Prioridad:
-not, and y or
+Prioridad = (+ a -)
+
+Not 
+
+and 
+
+or
 
 '''
+
+a = 3543
+b = 324
+c = 2325
+
+if a > b and a > c:
+    print("A es mayor")
+elif b > a and b > c:
+    print("B es mayor")
+else:
+    print("C es mayor")
+
+
+ere = 234 
+eree = 234
+
+if ere == eree or eree == ere: 
+    print("son iguales")
+
+
+
+""" 
+
+Listas
+
+Pueden ser modificadas
+
+"""
+
+
+lista = ['a', 'b', 'c', 'd', 'f']
+
+print(lista[0])
+print(lista[1])
+print(lista[2])
+print(lista[3])
+print(lista[4])
+
+
+# Como agregar un elemento a la lista? 
+
+lista.append(5) # lista = ['a', 'b', 'c', 'd', 'f', 5]
+
+print(lista)
+
+
+# Como agregar un elemento en un indice en especifico?
+
+lista.insert(5, 'g')  # lista = ['a', 'b', 'c', 'd', 'f', 'g', 5]
+print(lista)
+
+
+# Como remover un elemento?
+
+lista.remove(5)
+print(lista) # lista = ['a', 'b', 'c', 'd', 'f', 'g']
+
+
+# Como encontrar un elemento especifico? 
+
+print('g' in lista)
+
+
+# Como hacer para que nos retorne el primer elemento del indice
+
+print(lista.index('c'))
+
+
+
+# Como cambiar un elemento (Esto es posible gracias a que las listas son mutables. es decir, sus elementos pueden ser modificados.)
+
+lista[4] = 'e'
+lista[5] = 'f'
+print(lista) # ['a', 'b', 'c', 'd', 'e', 'f']
