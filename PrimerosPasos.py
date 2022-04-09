@@ -217,6 +217,3 @@ print(lista.index('c'))
 lista[4] = 'e'
 lista[5] = 'f'
 print(lista) # ['a', 'b', 'c', 'd', 'e', 'f']
-
-
-# DIA 3 | 08/04/2022
