@@ -217,3 +217,61 @@ print(lista.index('c'))
 lista[4] = 'e'
 lista[5] = 'f'
 print(lista) # ['a', 'b', 'c', 'd', 'e', 'f']
+
+
+# DIA 3 | 08/04/2022
+
+""" 
+
+Metodos Importantes para listas
+
+.count : se usa para saber cuantas veces se repite un elemento en la lista.
+.extend : se usa para extender una lista agregandole elementos de otra lista.
+.pop() : se usa para eliminar y retornar un elemento de la lista
+.reverse() : reversa el orden actual de la lista
+.sort() : ordena la lista en un orden especifico, ASC o DESC
+
+
+"""
+
+
+
+""" 
+
+Tuplas
+
+"""
+
+
+# Es una estructura de datos inmutable con una secuencia ordenada de elementos 
+
+numeros = (1, 2, 3, 4)
+
+# Como acceder a un elemento?
+
+print(numeros[2]) # 3
+
+
+# Como encontrar un elemento? 
+
+print(5 in numeros) # False
+print( 3 in numeros) # True
+
+# Metodo .index para encontrar el indice especifico
+
+print(numeros.index(4)) # 3
+
+# Metodo .count() para que nos encuentre el numero de secuencias del elemento
+
+numeros = (1, 2, 3, 4, 5, 6, 6, 5, 5, 6, 6, 7, 8)
+
+print(numeros)
+print(numeros.count(6))
+
+
+
+""" 
+
+Diccionarios
+
+"""
