@@ -9,6 +9,9 @@ que tipo de datos son nuestras variables y su longitud.
 
 '''
 
+from re import A
+
+
 variableNumerica = 25042001
 variableCadenaDeTexto = 'El numero de arriba es mi nacimiento'
 variableConComa = 2.2
@@ -270,8 +273,53 @@ print(numeros.count(6))
 
 
 
+# DIA 5 | 12/04/2022
+
+
 """ 
 
 Diccionarios
+
+"""
+
+letras_numeros = {"A": 1, "B": 2, "C": 3}
+
+# Como acceder a un valor?
+
+
+print(letras_numeros.get("A"))
+
+
+# Añadir o modificar, SI LA CLAVE NO EXISTE
+
+letras_numeros["D"] = 4
+
+print(letras_numeros.get("D"))
+
+
+# SI EXISTE, podemos actualizar el valor
+
+letras_numeros['A'] = 0
+print(letras_numeros.get("A")) # "A": 0 --Nuevo valor
+
+
+# Remover 
+
+del letras_numeros['D']
+print(letras_numeros.get("D")) # None, ya que "D" no va a existir mas | letras_numeros = {'A': 0, 'B': 2, 'C': 3}
+print(letras_numeros)
+
+
+# Revisar una clave especifica
+
+print("A" in letras_numeros) # True
+print("G" in letras_numeros) # False
+
+
+
+
+""" 
+
+Ciclos for
 
 """
